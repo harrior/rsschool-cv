@@ -1,15 +1,15 @@
-#1 Sizov Sergey  
-#2 Contacts:  
+# Sizov Sergey  
+## Contacts:  
 **E-Mail** harrior@gmail.com  
 **Telegram** @harrior  
 [LinkedIn](https://www.linkedin.com/in/sbsizov/)  
 
-#2 Brief information  
+## Brief information  
 I want to become a  professional full stack Web-Developer and probably System-Architect.  
 I have more than 10 years of experience in system and network administration.  
 I have been carrying out commercial orders for the development of small applications for automation of business processes.  
 
-#2 Skills\Technologies\Tools  
+## Skills\Technologies\Tools  
 My main language is *Python 3.7 and higher*.  
 **Frameworks and technologies by directions:**  
 Web - Django (and HTML5\CSS3 of course).  
@@ -24,7 +24,7 @@ Follow to TDD methodology.
 
 *Now I'm studying JS, TS and Node.js in RS School. :)*  
 
-#2 Samples of code.  
+## Samples of code.  
 This is my solve of [that](https://www.codewars.com/kata/5235c913397cbf2508000048) 3 Ku task.  
 This is a realisation of Calculator with RPN. (*I know code needs refactor and I'll make it once :(* )  
 ```
@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
 I have fourth Ku at the Codewars https://www.codewars.com/users/harrior  
 
-#2 Work experience  
+## Work experience  
 Since 2017 I have developed applications to automate the business tasks of my clients.  
 Since 2008 I have been dealing with system and network administration as well as information security.  
 I am able to configure Windows and Linux servers, design and install computer networks.  
@@ -114,11 +114,11 @@ I have experience in practical information security.
 * https://github.com/harrior/Ilchenko_project - This is my first commercial project (2017 year) for OOO "Skiit". This is a tool for convert data of seismic research to human-oriented view. (Delphi)  
 * https://github.com/harrior/TB-SQLi-Shell-demo - *That's my favorite child :)* Simple tool for Blind SQL Injection exploitation demonstration with Python and requests.  
 
-#2 Education and Science  
+## Education and Science  
 Since 2019 I have been teaching at PGU (https://pgu.ru/) the disciplines "Modern Programming Languages", "Technologies and Programming Methods" for bachelors.  
 2016-2020 Graduated from the postgraduate study of the SFedU (https://sfedu.ru/). The topic of the graduation diploma is "Modeling of hydrolithospheric processes using machine learning methods".  
 Graduated from PSTU University (now NCFU - www.ncfu.ru) with a degree in Control and Informatics in Technical Systems in 2010.  
 Author of a number of publications in peer-reviewed Russian and international scientific publications  
 
-#2 English level  
+## English level  
 My English level is **A2\B1**
