@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Curriculum vitae of Sizov Sergey</title>
 </head>
@@ -61,9 +61,12 @@
         <section class="references">
             <h2>Refrences</h2>
             <ul>
-                <li><img src="img/linkedin.svg" alt="LinkedIn"><a href="https://www.linkedin.com/in/sbsizov/" target="_blank">LinkedIn</a></li>
-                <li><img src="img/github.svg" alt="GitHub"><a href="https://github.com/harrior/" target="_blank">GitHub</a></li>
-                <li><img src="img/codewars.svg" alt="CodeWars"><a href="https://www.codewars.com/users/harrior" target="_blank">CodeWars</a></li>
+                <li><img src="img/linkedin.svg" alt="LinkedIn"><a href="https://www.linkedin.com/in/sbsizov/"
+                                                                  target="_blank">LinkedIn</a></li>
+                <li><img src="img/github.svg" alt="GitHub"><a href="https://github.com/harrior/"
+                                                              target="_blank">GitHub</a></li>
+                <li><img src="img/codewars.svg" alt="CodeWars"><a href="https://www.codewars.com/users/harrior"
+                                                                  target="_blank">CodeWars</a></li>
             </ul>
         </section>
     </div>
@@ -71,54 +74,52 @@
     <div class="right-column">
         <section class="education">
             <h2>Education</h2>
-            <div>
-                <h3>Technical systems management</h3>
-                <span>2016-2020</span>
-                <p>Researcher, Teacher-researcher (Post-graduate)</p>
-                <p>Southern Federal University</p>
-                <ul>
+            <div class="case edu-case">
+                <h3 class="title">Technical systems management (Post-graduate)</h3>
+                <span class="years">2016-2020</span>
+                <p class="organisation">Southern Federal University </p>
+                <ul class="achievements">
                     <li>Author of nine publications in peer-reviewed Russian and international scientific
                         publications.
                     </li>
                     <li>Spoke at international conferences</li>
-                    <li>Dissertation topic is "Modeling of hydrolithospheric processes using machine learning
-                        methods".
+                    <li>Dissertation topic is <strong>"Modeling of hydrolithospheric processes using machine learning
+                        methods"</strong>>.
                     </li>
                 </ul>
             </div>
-            <div>
-                <h3>Technical systems management</h3>
-                <span>2005-2010</span>
-                <p>Engineer, Specialist</p>
-                <p>North-Caucasian Federal University</p>
+            <div class="case edu-case">
+                <h3 class="title">Technical systems management (Specialist)</h3>
+                <span class="years">2005-2010</span>
+                <p class="organisation">North-Caucasian Federal University</p>
             </div>
         </section>
 
         <section class="experience">
             <h2>Work experience</h2>
-            <div>
-                <h3>Instructor of information security and programing</h3>
-                <span>2019 - Ongoing</span>
-                <p>Pyatigorsk State University</p>
-                <ul>
-                    <li>Teaching "Modern Programming Languages", "Technologies and Programming Methods" for bachelors.
-                    </li>
+            <div class="case work-case">
+                <h3 class="title">Instructor of information security and programing</h3>
+                <span class="years">2019 - Ongoing</span>
+                <p class="organisation">Pyatigorsk State University</p>
+                <ul class="achievements">
+                    <li>Teaching "Modern Programming Languages"</li>
+                    <li>Teaching "Technologies and Programming Methods"</li>
                 </ul>
             </div>
-            <div>
-                <h3>Developer</h3>
-                <span>2017 - Ongoing</span>
-                <p>Freelance</p>
-                <ul>
+            <div class="case work-case">
+                <h3 class="title">Developer</h3>
+                <span class="years">2017 - Ongoing</span>
+                <p class="organisation">Freelance</p>
+                <ul class="achievements">
                     <li>Develop applications to automate the business tasks of my clients.</li>
-                    <li>Using technologies are Python, Delphi, PHP and etc.</li>
+                    <li>Using languages are Python, Delphi, PHP and etc.</li>
                 </ul>
             </div>
-            <div>
-                <h3>System Administrator</h3>
-                <span>2008 - 2017</span>
-                <p>Freelance</p>
-                <ul>
+            <div class="case work-case">
+                <h3 class="title">System Administrator</h3>
+                <span class="years">2008 - 2017</span>
+                <p class="organisation">Freelance</p>
+                <ul class="achievements">
                     <li>Configuration and administration Linux and Windows servers</li>
                     <li>Automation of administration and deployment tasks using Python and Bash scripts</li>
                     <li>Design, install and support computer networks (largest is more than 1k hosts).</li>
@@ -126,107 +127,17 @@
                     <li>Information Security</li>
                 </ul>
             </div>
-            <div>
-                <h3>Junior System Administrator</h3>
-                <span>2007 - 2009</span>
-                North-Caucasian Federal University
-                <ul>
-                    <li>Helpdesk</li>
-                    <li>Install and support computer networks</li>
-                </ul>
-            </div>
         </section>
 
         <section class="code-sample">
             <h2>Samples of code.</h2>
-            <p>
-                This is my solve of
-                [that](https://www.codewars.com/kata/5235c913397cbf2508000048) 3 Ku
-                task.
-            </p>
-            <p>
-                This is a realisation of Calculator with RPN. (*I know code needs
-                refactor and I"ll make it once :(* )
-            </p>
-
-            <code style="display: none">
-                class Calculator(object):
-                OPERATIONS = {"+": 1, "-": 1, "*": 2, "/": 2, "(": 0, ")": 0, "^":3}
-                NUMBERS = "1234567890."
-
-                def split_str(self, string):
-                operands = []
-                s = []
-                for i in string+" ":
-                if i in self.NUMBERS:
-                s.append(i)
-                else:
-                if len(s) &gt; 0:
-                operands.append(float("".join(s)))
-                s.clear()
-                if i in self.OPERATIONS:
-                operands.append(i)
-                return operands
-
-                def make_rpn(self, operands):
-                result_list = []
-                stack = []
-                for i in operands:
-                if isinstance(i, float):
-                result_list.append(i)
-                elif i == "(":
-                stack.append(i)
-                elif i == ")":
-                j = stack.pop()
-                while (j != "("): #парность скобок?
-                result_list.append(j)
-                j = stack.pop()
-                elif i in self.OPERATIONS:
-                while len(stack) &gt; 0 and self.OPERATIONS[stack[-1]] &gt;= self.OPERATIONS[i]:
-                result_list.append(stack.pop())
-                stack.append(i)
-                else:
-                while len(stack) &gt; 0:
-                result_list.append(stack.pop())
-                return result_list
-
-                def evaluate_expression(self,operate, param1, param2):
-                if operate == "+":
-                return param1 + param2
-                elif operate == "-":
-                return param1 - param2
-                elif operate == "*":
-                return param1 * param2
-                elif operate == "/":
-                return param1 / param2
-                elif operate == "^":
-                return param1 ** param2
-
-                def evaluate_rpn(self, rpn):
-                while len(rpn)&gt;1:
-                for i, v in enumerate(rpn):
-                if v in self.OPERATIONS:
-                param1 = rpn.pop(i-2)
-                param2 = rpn.pop(i-2)
-                oper = rpn.pop(i-2)
-                rpn.insert(i-2, self.evaluate_expression(oper,param1,param2))
-                break
-                return rpn[-1] if abs(rpn[-1] - int(rpn[-1])) &gt; 0 else int(rpn[-1])
-
-                def evaluate(self, string):
-                operands = self.split_str(string)
-                rpn = self.make_rpn(operands)
-                return self.evaluate_rpn(rpn)
-
-
-                if __name__ == "__main__":
-                print(Calculator().evaluate("2 + 3 * 4 / 3 - 6 / 3 * 3 + 8"))
-                ```
+            <p> Because JS is a new language for me, I just show my first JS example here.</p>
+            <code>
+                &lt;script&gt;
+                    console.log("Hello, World!");
+                &lt;/script&gt;
             </code>
-            <p>
-                I have fourth Ku at the Codewars
-                https://www.codewars.com/users/harrior
-            </p>
+            <p>You can see my another code on <a href="https://github.com/harrior/" target="_blank">GitHub</a> and <a href="https://www.codewars.com/users/harrior" target="_blank">CodeWars</a>.</p>
         </section>
     </div>
 </main>

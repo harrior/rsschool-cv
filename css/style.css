@@ -1,23 +1,23 @@
 main {
     display: flex;
     flex-direction: row;
-    #flex-wrap: nowrap;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.1em;
 }
 
 .left-column {
-    min-width: 185px;
-    width: 200px;
+    margin-left: auto;
+    min-width: 15em;
+    width: 20em;
     background-color: #174180;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    padding: 45px 15px;
-    font-family: Open Sans, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
+    padding: 5em 1em 0;
     color: #FFFFFF;
 }
 
@@ -29,6 +29,12 @@ main {
     display: none;
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -38,13 +44,7 @@ main {
     border-radius: 50%;
     width: 70%;
     align-self: center;
-    margin-bottom: 15px;
-}
-
-.about h1 {
-    font-weight: normal;
-    font-size: 2em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
 }
 
 .about .position {
@@ -62,7 +62,7 @@ main {
 
 .contacts li a {
     color: #56CCF2;
-    padding: 5px;
+    padding: 0.5em;
     vertical-align: top;
     font-size: 1.2em;
     text-decoration: none;
@@ -78,7 +78,6 @@ main {
 }
 
 .skills ul {
-    width: 185px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -87,7 +86,7 @@ main {
 }
 
 .skills li {
-    width: 80px;
+    width: 50%;
     line-height: 1.5em;
     margin-left: 0;
 }
@@ -95,11 +94,13 @@ main {
 .language dl {
     line-height: 1.5em;
 }
+
 .language dt {
     float: left;
     clear: left;
-    width: 85px;
+    width: 50%;
 }
+
 .language dd {
     opacity: 0.5;
     font-style: italic;
@@ -125,4 +126,83 @@ main {
 .references li a:hover {
     color: #7ed6f6;
     text-decoration: underline;
+}
+
+.right-column {
+    margin-right: auto;
+    min-width: 25em;
+    max-width: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 5em 2em;
+    color: #828282;
+}
+
+.right-column h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #174180;
+}
+
+.case {
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: baseline;
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+
+.edu-case {
+    grid-template-areas:
+            "title title"
+            "organisation years"
+            "achievements achievements";
+}
+
+.work-case {
+    grid-template-areas:
+            "title years"
+            "organisation organisation"
+            "achievements achievements";
+}
+
+.title {
+    color: #4F4F4F;
+    font-weight: bold;
+    margin: 0;
+    grid-area: title;
+}
+
+.organisation {
+    margin: 0;
+    grid-area: organisation;
+}
+
+.years {
+    margin: 0;
+    grid-area: years;
+    text-align: right;
+}
+
+
+.achievements {
+    font-size: 0.8em;
+    margin: 0;
+    grid-area: achievements;
+}
+
+.code-sample {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+code {
+    color: black;
+    font-family: monospace;
+    white-space: pre-wrap;
+
 }
