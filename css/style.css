@@ -1,0 +1,74 @@
+main {
+    display: flex;
+    flex-direction: row;
+    #flex-wrap: nowrap;
+}
+
+.left-column {
+    min-width: 185px;
+    width: 185px;
+    background-color: #174180;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 45px 15px;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.left-column h2 {
+    color: #56CCF2;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+.about .photo{
+    border-radius: 50%;
+    width: 70%;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.about h1 {
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.about .position {
+    font-size: 1.4em;
+}
+
+
+.contacts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.contacts img {
+    width: 1.4em;
+}
+.contacts li a {
+    color: #56CCF2;
+    padding: 5px;
+    vertical-align: top;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.contacts li a:hover {
+    color: #7ed6f6;
+    text-decoration: underline;
+}
+
+.about .description {
+    line-height: 1.5em;
+}
+.skills {
+}

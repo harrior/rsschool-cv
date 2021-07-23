@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Curriculum vitae of Sizov Sergey</title>
 </head>
 <body>
 <main>
+    <div class="left-column">
     <section class="about">
-        <img src="img/photo.jpg" alt="Photo">
+        <img class="photo" src="img/photo.jpg" alt="Photo">
         <h1>Sergey <b>Sizov</b></h1>
-        <p>Web-Developer</p>
+        <p class="position">Junior Web Developer</p>
         <section class="contacts">
             <ul>
-                <li><img src=""> <a href="mailto:harrior@gmail.com">harrior@gmail.com</a></li>
+                <li><img src="img/mail.svg" alt="e-mail"> <a href="mailto:harrior@gmail.com">harrior@gmail.com</a></li>
             </ul>
             <ul>
-                <li><img src=""> <a href="tel:+79187551613">+7 (918) 755-16-13</a></li>
+                <li><img src="img/phone.svg"> <a href="tel:+79187551613">+7 (918) 755-16-13</a></li>
             </ul>
             <ul>
-                <li><img src=""> <a>Pyatigorsk, Russia</a></li>
+                <li><img src="img/marker.svg"> <a>Pyatigorsk, Russia</a></li>
             </ul>
         </section>
-        <p>
+        <p class="description">
             System administrator with over 12 years of experience and teaching.<br>
             I want to apply my experience and knowledge of Python, JS and SQL in the development of web applications.<br>
             Interested in the development of high-load systems.<br>
@@ -60,7 +62,8 @@
             <li>CodeWars</li>
         </ul>
     </section>
-
+    </div>
+<div class="right-column">
     <section class="education">
         <h2>Education</h2>
         <div>
@@ -106,9 +109,10 @@
             <span>2008 - 2017</span>
             <p>Freelance</p>
             <ul>
+                <li>Configuration and administration Linux and Windows servers</li>
+                <li>Automation of administration and deployment tasks using Python and Bash scripts</li>
                 <li>Design, install and support computer networks (largest is more than 1k hosts).</li>
-                <li>Configuration and administration Linux and Windows systems</li>
-                <li>Hosting and revision of the customer's website</li>
+                <li>Hosting and revision of the customer's websites</li>
                 <li>Information Security</li>
             </ul>
         </div>
@@ -122,6 +126,7 @@
             </ul>
         </div>
     </section>
+
     <section class="code-sample">
         <h2>Samples of code.</h2>
         <p>
@@ -213,6 +218,7 @@
             https://www.codewars.com/users/harrior
         </p>
     </section>
+</div>
     </main>
 </body>
 </html>
