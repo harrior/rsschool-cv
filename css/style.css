@@ -6,7 +6,7 @@ main {
 
 .left-column {
     min-width: 185px;
-    width: 185px;
+    width: 200px;
     background-color: #174180;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ main {
     font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
 }
@@ -25,11 +25,16 @@ main {
     color: #56CCF2;
 }
 
+.contacts h2 {
+    display: none;
+}
+
 .about {
     display: flex;
     flex-direction: column;
 }
-.about .photo{
+
+.about .photo {
     border-radius: 50%;
     width: 70%;
     align-self: center;
@@ -46,19 +51,20 @@ main {
     font-size: 1.4em;
 }
 
-
 .contacts ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 .contacts img {
-    width: 1.4em;
+    width: 1.2em;
 }
+
 .contacts li a {
     color: #56CCF2;
     padding: 5px;
     vertical-align: top;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -70,5 +76,53 @@ main {
 .about .description {
     line-height: 1.5em;
 }
-.skills {
+
+.skills ul {
+    width: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills li {
+    width: 80px;
+    line-height: 1.5em;
+    margin-left: 0;
+}
+
+.language dl {
+    line-height: 1.5em;
+}
+.language dt {
+    float: left;
+    clear: left;
+    width: 85px;
+}
+.language dd {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.references ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.references img {
+    width: 3em;
+    vertical-align: middle;
+    margin-bottom: 1em;
+}
+
+.references li a {
+    color: #56CCF2;
+    padding-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.references li a:hover {
+    color: #7ed6f6;
+    text-decoration: underline;
 }
