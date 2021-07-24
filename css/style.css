@@ -1,38 +1,51 @@
 main {
   display: flex;
   flex-direction: row;
-  font-family: Open Sans, sans-serif;
+
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 10px;
   line-height: 1.1em;
+  font-weight: normal;
 }
 
 .left-column {
-  margin-left: auto;
-  min-width: 15em;
-  width: 20em;
-  background-color: #174180;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  width: 20em;
+  min-width: 15em;
+  margin-left: auto;
   padding: 5em 1em 0;
+
   color: #FFFFFF;
+
+  background-color: #174180;
 }
 
 .left-column h2 {
   color: #56CCF2;
 }
 
-.contacts h2 {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1 {
+  margin-bottom: 0;
+
   font-weight: normal;
   font-size: 2em;
-  margin-bottom: 0;
 }
 
 .about {
@@ -40,11 +53,17 @@ h1 {
   flex-direction: column;
 }
 
-.about .photo {
-  border-radius: 50%;
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
   width: 70%;
   align-self: center;
   margin-bottom: 1em;
+
+  border-radius: 50%;
 }
 
 .about .position {
@@ -52,8 +71,9 @@ h1 {
 }
 
 .contacts ul {
-  list-style-type: none;
   padding-left: 0;
+
+  list-style-type: none;
 }
 
 .contacts img {
@@ -61,16 +81,16 @@ h1 {
 }
 
 .contacts li a {
-  color: #56CCF2;
   padding: 0.5em;
-  vertical-align: top;
+
   font-size: 1.2em;
   text-decoration: none;
+  color: #56CCF2;
 }
 
 .contacts li a:hover {
-  color: #7ed6f6;
   text-decoration: underline;
+  color: #7ed6f6;
 }
 
 .about .description {
@@ -82,13 +102,15 @@ h1 {
   flex-wrap: wrap;
   flex-direction: row;
   padding-left: 0;
+
   list-style: none;
 }
 
 .skills li {
   width: 50%;
-  line-height: 1.5em;
   margin-left: 0;
+
+  line-height: 1.5em;
 }
 
 .language dl {
@@ -97,46 +119,51 @@ h1 {
 
 .language dt {
   float: left;
-  clear: left;
   width: 50%;
+  clear: left;
 }
 
 .language dd {
-  opacity: 0.5;
   font-style: italic;
+
+  opacity: 0.5;
 }
 
 .references ul {
   padding-left: 0;
+
   list-style-type: none;
 }
 
 .references img {
   width: 3em;
-  vertical-align: middle;
   margin-bottom: 1em;
+
+  vertical-align: middle;
 }
 
 .references li a {
-  color: #56CCF2;
   padding-left: 0.5em;
+
   font-size: 1.2em;
+  color: #56CCF2;
 }
 
 .references li a:hover {
-  color: #7ed6f6;
   text-decoration: underline;
+  color: #7ed6f6;
 }
 
 .right-column {
-  margin-right: auto;
-  min-width: 25em;
-  max-width: 45em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  min-width: 25em;
+  max-width: 45em;
+  margin-right: auto;
   padding: 5em 2em;
+
   color: #828282;
 }
 
@@ -147,11 +174,12 @@ h1 {
 }
 
 .case {
-  margin-left: 0.5em;
-  margin-bottom: 1em;
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: baseline;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+
   font-size: 1.4em;
   line-height: 1.6em;
 }
@@ -171,28 +199,31 @@ h1 {
 }
 
 .title {
-  color: #4F4F4F;
-  font-weight: bold;
-  margin: 0;
   grid-area: title;
+  margin: 0;
+
+  font-weight: bold;
+  color: #4F4F4F;
 }
 
 .organisation {
-  margin: 0;
   grid-area: organisation;
+  margin: 0;
 }
 
 .years {
-  margin: 0;
   grid-area: years;
+  margin: 0;
+
   text-align: right;
 }
 
 
 .achievements {
-  font-size: 0.8em;
-  margin: 0;
   grid-area: achievements;
+  margin: 0;
+
+  font-size: 0.8em;
 }
 
 .code-sample {
@@ -201,9 +232,9 @@ h1 {
 }
 
 code {
-  color: black;
   font-family: monospace;
   white-space: pre-wrap;
+  color: #000000;
 }
 
 footer {
