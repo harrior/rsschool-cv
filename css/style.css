@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.link {
+  color: black;
+  text-decoration-line: none;
+  transition: all 0.3s linear;
+}
+.link:hover{
+  color: #328dce;
+  border-bottom: 1px dashed #328dce;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  max-width: 800px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px dotted rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.left-column .section-header {
+  align-self: center;
+  margin: 5px
+}
+
+.right-column .section-header {
+  align-self: start;
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.right-column {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+}
+
+/* header*/
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+.header__title,
+.header__subtitle{
+  margin: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+}
+.nav__item a{
+  font-size: 20px;
+}
+
+.nav {
+  max-width: 400px;
+}
+/*end header*/
+
+/* contacts */
+.photo {
+  width: 80%;
+  align-self: center;
+  border-radius: 50%;
+  -webkit-filter: grayscale(1);
+  transition: all 0.5s linear;
+}
+
+.photo:hover{
+  -webkit-filter: grayscale(0%);
+}
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+.contacts ul li{
+  padding: 5px;
+}
+
+.contacts__icon {
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+/* end contacts*/
+.references ul {
+  /*padding-left: 0;*/
+  list-style: none;
+  padding: 0;
+}
+
+.references ul li{
+  padding: 5px;
+}
+
+.references img {
+  width: 3em;
+  /*margin-bottom: 1em;*/
+  padding-right: 1em;
+  vertical-align: middle;
+}
+
+
+/*work and experience sections*/
+.section-container{
+  display: flex;
+}
+
+.projects-preview {
+  max-width: 600px;
+  -webkit-filter: grayscale(1);
+  transition: all 0.3s linear;
+}
+.projects-preview:hover{
+  -webkit-filter: grayscale(0%);
+}
+
+.years {
+  border: 1px dashed black;
+  background-color: yellow;
+  border-radius: 5%;
+}
