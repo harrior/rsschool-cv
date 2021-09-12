@@ -199,6 +199,10 @@ body {
   width: 8rem;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 @media screen and (max-width: 600px){
   .section {
     position: relative;
