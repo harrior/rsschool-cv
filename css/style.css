@@ -194,7 +194,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 800px){
+
+.rs--logo {
+  width: 8rem;
+}
+
+@media screen and (max-width: 600px){
   .section {
     position: relative;
     align-content: center;
@@ -240,11 +245,7 @@ body {
     background-color: rgb(255,255,255 );
   }
 
-  .header__logo {
-    /*width: 100%;*/
-  }
   .content{
-    /*display: ;*/
     flex-direction: column;
     width: 100%;
   }
