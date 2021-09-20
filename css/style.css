@@ -203,6 +203,10 @@ pre {
   white-space: pre-wrap;
 }
 
+.yt-video {
+  height: 320px;
+}
+
 @media screen and (max-width: 600px){
   .section {
     position: relative;
