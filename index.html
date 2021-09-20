@@ -24,6 +24,7 @@
       </button>
       <ul class="nav__list">
         <li class="nav__item"><a class="link" href="#about">About</a></li>
+        <li class="nav__item"><a class="link" href="#projects">Projects</a></li>
         <li class="nav__item"><a class="link" href="#education">Education</a></li>
         <li class="nav__item"><a class="link" href="#experience">Experience</a></li>
         <li class="nav__item"><a class="link" href="#code">Code</a></li>
@@ -96,7 +97,7 @@
           applications.<br>
           Interested in the development of high-load systems.<br>
         </p>
-        <video controls></video>
+        <iframe height="320px" src="https://www.youtube.com/embed/l7FgvaWe8cc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
 
       <section class="section education">
@@ -194,7 +195,7 @@ module.exports = function toReadable (number) {
   }
 
   if (number.toString().length === 3){
-    result = `${numbers[Math.trunc(number/100)]} hundred`;
+    result = `${numbers[Math.trunc(number / 100)]} hundred`;
     number %= 100;
   }
   if (number>=20) {
@@ -215,12 +216,27 @@ module.exports = function toReadable (number) {
         <p>These projects were made during the "RS pre-school"</p>
         <div class="preview-container">
           <figure>
+            <figcaption>
+              <p><b>Project:</b> Museum Louvre</p>
+              <p>Layout of the main page of the Louvre Museum website.</p>
+              <p><b>Technologies:</b>  HTML, CSS</p>
+            </figcaption>
           <a href="https://rolling-scopes-school.github.io/harrior-JSFEPRESCHOOL/museum/" target="_blank"><img src="img/louvre.png" alt="Louver museum project preview" class="projects-preview"></a>
           </figure>
           <figure>
+            <figcaption>
+              <p><b>Project:</b> Custom Video Player</p>
+              <p>Development of a custom design for a video player.</p>
+              <p><b>Technologies:</b>  HTML, CSS, JS</p>
+            </figcaption>
           <a href="https://rolling-scopes-school.github.io/harrior-JSFEPRESCHOOL/custom-video-player/" target="_blank"><img src="img/player.png" alt="Player project preview" class="projects-preview"></a>
           </figure>
           <figure>
+            <figcaption>
+              <p><b>Project:</b> JS Clock</p>
+              <p>Practice of working with date and time using JS</p>
+              <p><b>Technologies:</b> HTML, CSS, JS</p>
+            </figcaption>
           <a href="https://rolling-scopes-school.github.io/harrior-JSFEPRESCHOOL/JS_Clock/" target="_blank"><img src="img/clock.png" alt="Clock project preview" class="projects-preview"></a>
           </figure>
         </div>

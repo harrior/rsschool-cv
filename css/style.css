@@ -72,7 +72,7 @@ body {
   list-style: none;
 }
 .nav__item a{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .preview-container{
   display: flex;
@@ -197,6 +197,10 @@ body {
 
 .rs--logo {
   width: 8rem;
+}
+
+pre {
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: 600px){
